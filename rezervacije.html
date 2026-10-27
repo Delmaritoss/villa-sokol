@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="hr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1B2A24">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/bodoni-moda-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/hanken-grotesk-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/faces.css?v=eba52d12">
+<link rel="stylesheet" href="scrollcraft.css?v=4cabdc0b">
+<link rel="stylesheet" href="css/site.css?v=0f8be4a9">
+
+<title data-i18n="meta.book.title">Rezervacije · Villa Sokol Opatija</title>
+<meta name="description" content="Pošaljite upit za Superior apartman, Deluxe ili Standard studio u vili Sokol, u centru Opatije." data-i18n-attr="content:meta.book.desc">
+<meta name="vs-email" content="info@villasokol.example">
+</head>
+<body data-page="rezervacije">
+<a class="skip" href="#main" data-i18n="ui.skip">Preskoči na sadržaj</a>
+<header class="bar" data-bar>
+  <a class="mark" href="index.html" aria-label="Villa Sokol" data-i18n-attr="aria-label:ui.home"><span class="mark__name">Villa Sokol</span><span class="mark__place">Opatija</span></a>
+  <nav class="nav" aria-label="Glavna navigacija" data-i18n-attr="aria-label:ui.nav">
+    <a href="apartmani.html" data-i18n="nav.units">Apartmani</a>
+    <a href="galerija.html" data-i18n="nav.gallery">Galerija</a>
+    <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
+  </nav>
+  <div class="lang" role="group" aria-label="Jezik" data-i18n-attr="aria-label:ui.lang">
+    <button type="button" data-lang="hr" lang="hr" aria-pressed="true">HR</button>
+    <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+    <button type="button" data-lang="de" lang="de" aria-pressed="false">DE</button>
+    <button type="button" data-lang="it" lang="it" aria-pressed="false">IT</button>
+  </div>
+  <a class="btn" href="rezervacije.html" aria-current="page" data-i18n="cta.book">Rezervirajte</a>
+  <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Izbornik" data-i18n-attr="aria-label:ui.menu" data-burger><span></span></button>
+</header>
+<div class="menu" id="menu" data-menu>
+  <nav aria-label="Izbornik" data-i18n-attr="aria-label:ui.menu">
+    <a href="index.html" data-i18n="nav.home">Početna</a>
+    <a href="apartmani.html" data-i18n="nav.units">Apartmani</a>
+    <a href="galerija.html" data-i18n="nav.gallery">Galerija</a>
+    <a href="rezervacije.html" aria-current="page" data-i18n="nav.book">Rezervacije</a>
+    <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
+  </nav>
+  <a class="btn" href="rezervacije.html" data-i18n="cta.book">Rezervirajte</a>
+  <div class="lang" role="group" aria-label="Jezik" data-i18n-attr="aria-label:ui.lang">
+    <button type="button" data-lang="hr" lang="hr" aria-pressed="true">HR</button>
+    <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+    <button type="button" data-lang="de" lang="de" aria-pressed="false">DE</button>
+    <button type="button" data-lang="it" lang="it" aria-pressed="false">IT</button>
+  </div>
+</div>
+
+
+<main id="main">
+  <header class="page-head on-paper" style="padding-bottom: var(--sc-7)">
+    <div class="wrap" data-sc-in data-sc-stagger="70">
+      <h1 class="sc-display t-xl" data-i18n="book.title">Rezervacije</h1>
+      <p class="lede" data-i18n="book.intro">Pošaljite upit s datumima i brojem gostiju. Odgovaramo s cijenom i potvrdom slobodnog termina; upit vas ni na što ne obvezuje.</p>
+    </div>
+  </header>
+
+  <section class="on-paper">
+    <div class="wrap resv">
+      <form class="form" data-form method="post" action="mailto:info@villasokol.example" enctype="text/plain" novalidate>
+        <fieldset>
+          <legend class="sc-display t-md" data-i18n="book.which">Koja jedinica?</legend>
+          <div class="picks">
+            <div class="pick"><input type="radio" name="jedinica" id="j-superior" value="superior" data-max="4"><label for="j-superior"><span class="pick__name" data-i18n="u.sup">Superior apartman</span><span class="pick__facts" data-i18n="u.sup.short">85 m² · do 4 osobe · balkon</span></label></div>
+            <div class="pick"><input type="radio" name="jedinica" id="j-deluxe" value="deluxe" data-max="2"><label for="j-deluxe"><span class="pick__name" data-i18n="u.dlx">Deluxe studio</span><span class="pick__facts" data-i18n="u.dlx.short">20 m² · 2 osobe · pogled na ulicu</span></label></div>
+            <div class="pick"><input type="radio" name="jedinica" id="j-standard" value="standard" data-max="2"><label for="j-standard"><span class="pick__name" data-i18n="u.std">Standard studio</span><span class="pick__facts" data-i18n="u.std.short">20 m² · 2 osobe · pogled na vrt</span></label></div>
+            <div class="pick"><input type="radio" name="jedinica" id="j-any" value="any" data-max="4" checked><label for="j-any"><span class="pick__name" data-i18n="book.any">Svejedno</span><span class="pick__facts" data-i18n="book.anyFacts">predložite nam što je slobodno</span></label></div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="sc-display t-md" data-i18n="book.when">Kada i koliko vas je?</legend>
+          <div class="row">
+            <div class="field"><label for="f-od" data-i18n="book.arrive">Dolazak</label><input type="date" id="f-od" name="dolazak" required><span class="err" data-err="od"></span></div>
+            <div class="field"><label for="f-do" data-i18n="book.leave">Odlazak</label><input type="date" id="f-do" name="odlazak" required><span class="err" data-err="do"></span></div>
+          </div>
+          <div class="row" style="margin-top: var(--sc-4)">
+            <div class="field"><label for="f-odrasli" data-i18n="book.adults">Odrasli</label>
+              <select id="f-odrasli" name="odrasli"><option>1</option><option selected>2</option><option>3</option><option>4</option></select></div>
+            <div class="field"><label for="f-djeca" data-i18n="book.kids">Djeca (do 17 godina)</label>
+              <select id="f-djeca" name="djeca"><option selected>0</option><option>1</option><option>2</option></select></div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="sc-display t-md" data-i18n="book.who">Vaši podaci</legend>
+          <div class="field"><label for="f-ime" data-i18n="book.name">Ime i prezime</label><input id="f-ime" name="ime" autocomplete="name" required><span class="err" data-err="ime"></span></div>
+          <div class="row" style="margin-top: var(--sc-4)">
+            <div class="field"><label for="f-email" data-i18n="book.email">E-mail</label><input type="email" id="f-email" name="email" autocomplete="email" required><span class="err" data-err="email"></span></div>
+            <div class="field"><label for="f-tel"><span data-i18n="book.phone">Telefon</span> <span class="hint" data-i18n="book.optional">(nije obavezno)</span></label><input type="tel" id="f-tel" name="telefon" autocomplete="tel"></div>
+          </div>
+          <div class="field" style="margin-top: var(--sc-4)"><label for="f-poruka"><span data-i18n="book.msg">Poruka</span> <span class="hint" data-i18n="book.optional">(nije obavezno)</span></label><textarea id="f-poruka" name="poruka" placeholder="Okvirno vrijeme dolaska, dob djece, pitanja o parkiranju…" data-i18n-attr="placeholder:book.msgPh"></textarea></div>
+        </fieldset>
+
+        <label class="check"><input type="checkbox" name="privola" required data-consent><span><span data-i18n="book.consent">Slažem se da se moji podaci koriste za odgovor na ovaj upit.</span> <a class="link" href="#privatnost" data-i18n="book.consentLink">Zaštita privatnosti</a></span></label>
+        <span class="err" data-err="privola" style="margin-top: calc(var(--sc-6) * -0.6)"></span>
+
+        <div class="form__actions">
+          <button class="btn" type="submit" data-i18n="book.send">Pošaljite upit</button>
+          <p class="form__note" data-i18n="book.how">Otvorit će se vaš program za e-poštu s pripremljenom porukom.</p>
+        </div>
+        <div class="status" data-status role="status" aria-live="polite" hidden></div>
+      </form>
+
+      <aside class="side">
+        <div class="card">
+          <h2 class="sc-display t-md" data-i18n="book.sumH">Vaš upit</h2>
+          <dl class="sum" data-sum>
+            <div><dt data-i18n="book.unit">Jedinica</dt><dd data-s="unit">–</dd></div>
+            <div><dt data-i18n="book.dates">Datumi</dt><dd data-s="dates">–</dd></div>
+            <div><dt data-i18n="book.nights">Noćenja</dt><dd data-s="nights" class="nums">–</dd></div>
+            <div><dt data-i18n="book.guests">Gosti</dt><dd data-s="guests">–</dd></div>
+          </dl>
+          <p class="warn" data-warn hidden></p>
+        </div>
+        <div class="card">
+          <h3 class="label" data-i18n="book.rulesH">Dobro je znati</h3>
+          <ul class="mini-rules">
+            <li data-i18n="mr.in">Dolazak od 14 do 20 h, odlazak od 8 do 10 h.</li>
+            <li data-i18n="mr.dep">Polog od 50 € u gotovini, vraća se pri odlasku.</li>
+            <li data-i18n="mr.no">Bez kućnih ljubimaca, pušenja i zabava.</li>
+            <li data-i18n="mr.park">Besplatno parkiranje na javnim mjestima u blizini.</li>
+          </ul>
+          <p style="margin: var(--sc-4) 0 0"><a class="link" href="apartmani.html#pravila" data-i18n="book.allRules">Cijeli kućni red</a></p>
+        </div>
+        <div class="card">
+          <h3 class="label" data-i18n="book.platH">Radije odmah?</h3>
+          <p class="body" data-i18n="book.platP">Iste jedinice možete rezervirati i preko platformi, s njihovim uvjetima otkazivanja.</p>
+          <div class="platforms">
+            <a class="btn btn--ghost" href="https://www.booking.com/hotel/hr/apartments-vila-sokol.html" rel="noopener" target="_blank">Booking.com</a>
+            <a class="btn btn--ghost" href="https://www.airbnb.com/rooms/1338930423621895066" rel="noopener" target="_blank">Airbnb</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+<footer class="foot on-dark">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div>
+        <a class="mark" href="index.html" aria-label="Villa Sokol" data-i18n-attr="aria-label:ui.home"><span class="mark__name">Villa Sokol</span><span class="mark__place">Opatija</span></a>
+        <p>Sveti Florijan 2, 51410 Opatija, <span data-i18n="foot.country">Hrvatska</span></p>
+        <p data-i18n="foot.floor">Prvi kat vile: jedan apartman i dva studija.</p>
+      </div>
+      <nav aria-label="Stranice" data-i18n-attr="aria-label:ui.pages">
+        <a href="apartmani.html" data-i18n="nav.units">Apartmani</a>
+        <a href="galerija.html" data-i18n="nav.gallery">Galerija</a>
+        <a href="rezervacije.html" data-i18n="nav.book">Rezervacije</a>
+        <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
+      </nav>
+      <div>
+        <p><a href="#" data-email>e-mail</a></p>
+        <p><a href="https://www.booking.com/hotel/hr/apartments-vila-sokol.html" rel="noopener" target="_blank">Booking.com</a> · <a href="https://www.airbnb.com/rooms/1338930423621895066" rel="noopener" target="_blank">Airbnb</a></p>
+        <p><a href="#privatnost" data-i18n="foot.privacy">Zaštita privatnosti</a></p>
+      </div>
+    </div>
+    <div class="foot__small">
+      <span>© <span data-year>2026</span> Villa Sokol Apartments Opatija</span>
+      <span data-i18n="foot.legal">Iznajmljivač: [ime i prezime / obrt, OIB]</span>
+    </div>
+  </div>
+  <div class="privacy" id="privatnost" role="dialog" aria-modal="true" aria-labelledby="priv-h">
+    <div class="privacy__box">
+      <a class="btn btn--ghost privacy__close" href="#" data-i18n="ui.close">Zatvori</a>
+      <h2 class="sc-display t-md" id="priv-h" data-i18n="priv.h">Zaštita privatnosti</h2>
+      <p data-i18n="priv.p1">Ova stranica ne koristi kolačiće, ne prati posjete i ne učitava ništa s tuđih poslužitelja: fontovi i fotografije nalaze se na ovoj stranici.</p>
+      <p data-i18n="priv.p2">Obrazac za upit ne šalje podatke nikamo sam: otvara vaš program za e-poštu s pripremljenom porukom, koju vi šaljete. Podatke iz upita koristimo samo da vam odgovorimo i, ako rezervirate, za prijavu boravka kako to propisuje zakon.</p>
+      <p data-i18n="priv.p3">Karta na stranici Kontakt učitava se tek kad je otvorite: tada se spajate na OpenStreetMap, koji vidi vašu IP adresu. Odabrani jezik pamti se samo u vašem pregledniku.</p>
+      <p data-i18n="priv.p4">Za pitanja ili brisanje podataka pišite nam na adresu navedenu na stranici Kontakt.</p>
+    </div>
+  </div>
+</footer>
+<script src="scrollcraft.js?v=950157d6"></script>
+<script src="js/i18n.js?v=a52f2b53"></script>
+<script src="js/site.js?v=0d8dc7b2"></script>
+
+</body>
+</html>
